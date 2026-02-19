@@ -1,0 +1,83 @@
+/* ПРИКЛАД 1. HTML5 елементи як блоки */
+header, nav, main, section, article, aside, footer, figure {
+    display: block;
+}
+
+/* ПРИКЛАД 2. Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* ПРИКЛАД 3. Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+/* ПРИКЛАД 4. Меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ПРИКЛАД 5. Основний контент */
+main {
+    padding: 20px;
+}
+
+/* ПРИКЛАД 6. Стаття */
+article {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* ПРИКЛАД 7. Figure */
+figure {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+figure img {
+    width: 100%;
+}
+
+/* ПРИКЛАД 8. Aside */
+aside {
+    background-color: #e6e6e6;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* ПРИКЛАД 9. Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ПРИКЛАД 10. mark */
+mark {
+    background-color: yellow;
+}
+
+/* ПРИКЛАД 11. time */
+time {
+    font-size: 0.9em;
+    color: gray;
+}

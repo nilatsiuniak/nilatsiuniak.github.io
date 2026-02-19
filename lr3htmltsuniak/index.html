@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Практична робота №1 — Семантичні елементи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ПРИКЛАД 1. header + hgroup -->
+<header>
+    <hgroup>
+        <h1>Мій сайт</h1>
+        <h2>Приклад використання HTML5</h2>
+    </hgroup>
+
+    <!-- ПРИКЛАД 2. nav -->
+    <nav>
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про мене</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ПРИКЛАД 3. main -->
+<main>
+
+    <!-- ПРИКЛАД 4. section -->
+    <section>
+        <h2>Свіжі статті</h2>
+
+        <!-- ПРИКЛАД 5. article -->
+        <article>
+            <header>
+                <h3>Семантична верстка</h3>
+                <time datetime="2026-02-10">10 лютого 2026</time>
+            </header>
+
+            <p>
+                HTML5 вводить <mark>семантичні елементи</mark>, які роблять код зрозумілішим.
+            </p>
+
+            <!-- ПРИКЛАД 6. figure + figcaption -->
+            <figure>
+                <img src="image.jpg" alt="HTML5">
+                <figcaption>Приклад семантичного зображення</figcaption>
+            </figure>
+
+            <!-- ПРИКЛАД 7. aside всередині article -->
+            <aside>
+                <p>Додаткова інформація до статті</p>
+            </aside>
+
+            <!-- ПРИКЛАД 8. footer + address -->
+            <footer>
+                <address>Автор: студент Web-напрямку</address>
+            </footer>
+        </article>
+
+    </section>
+
+</main>
+
+<!-- ПРИКЛАД 9. aside (бічна колонка) -->
+<aside>
+    <section>
+        <h3>Реклама</h3>
+        <p>Тут може бути ваша реклама</p>
+    </section>
+</aside>
+
+<!-- ПРИКЛАД 10. footer сторінки -->
+<footer>
+    <small>© 2026 Всі права захищені</small>
+</footer>
+
+<!-- ПРИКЛАД 11. bdi -->
+<p>Користувач: <bdi>שלום</bdi></p>
+
+<!-- ПРИКЛАД 12. wbr -->
+<p>ДужеДовгеСлово<wbr>Для<wbr>Переносу</p>
+
+</body>
+</html>
