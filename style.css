@@ -70,27 +70,28 @@ ul {
 li {
     margin-bottom: 8px;
 }
+/* PORTFOLIO */
 
-/* LAB BUTTONS */
-
-.labs .buttons {
+.portfolio-links {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.btn {
+.portfolio-btn {
     text-decoration: none;
     background-color: #0f766e;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 22px;
     border-radius: 8px;
-    transition: 0.3s;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
-.btn:hover {
+.portfolio-btn:hover {
     background-color: #134e4a;
+    transform: translateY(-3px);
 }
 
 /* FOOTER */
@@ -121,3 +122,4 @@ footer {
 .footer-links a:hover {
     color: white;
 }
+
