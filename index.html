@@ -10,7 +10,10 @@
 
 <header>
     <div class="header-content">
-        <img src="images/papich.png" alt="Фото" class="photo">
+        <figure>
+            <img src="images/papich.png" alt="Фото Неоніли Цюняк" class="photo">
+        </figure>
+
         <div>
             <h1>Неоніла Цюняк</h1>
             <p>Студентка спеціальності "Програмна інженерія"</p>
@@ -20,21 +23,40 @@
 
 <main>
 
-    <section>
-        <h2>Контактна інформація</h2>
-        <p><strong>Email:</strong> nila.tsiuniak-pi2302@kep.nung.edu.ua</p>
-        <p><strong>Телефон:</strong> +380 XX XXX XX XX</p>
-        <p><strong>Місто:</strong> Івано-Франківськ</p>
+    <!-- Контакти -->
+    <section aria-labelledby="contacts">
+        <h2 id="contacts">Контактна інформація</h2>
+
+        <address>
+            <p><strong>Email:</strong> 
+                <a href="mailto:nila.tsiuniak-pi2302@kep.nung.edu.ua">
+                    nila.tsiuniak-pi2302@kep.nung.edu.ua
+                </a>
+            </p>
+
+            <p><strong>Телефон:</strong> 
+                <a href="tel:+380XXXXXXXXX">+380 XX XXX XX XX</a>
+            </p>
+
+            <p><strong>Місто:</strong> Івано-Франківськ</p>
+        </address>
     </section>
 
-    <section>
-        <h2>Освіта</h2>
-        <p><strong>Бакалавр</strong> (2023 – теперішній час)</p>
-        <p>Спеціальність: Програмна інженерія</p>
+    <!-- Освіта -->
+    <section aria-labelledby="education">
+        <h2 id="education">Освіта</h2>
+
+        <article>
+            <h3>Бакалавр</h3>
+            <p><time datetime="2023">2023</time> – теперішній час</p>
+            <p>Спеціальність: Програмна інженерія</p>
+        </article>
     </section>
 
-    <section>
-        <h2>Навички</h2>
+    <!-- Навички -->
+    <section aria-labelledby="skills">
+        <h2 id="skills">Навички</h2>
+
         <ul>
             <li>HTML, CSS</li>
             <li>C++</li>
@@ -43,43 +65,62 @@
         </ul>
     </section>
 
-    <section>
-        <h2>Мови</h2>
-        <p>Українська — рідна</p>
-        <p>Англійська — середній рівень</p>
+    <!-- Мови -->
+    <section aria-labelledby="languages">
+        <h2 id="languages">Мови</h2>
+
+        <ul>
+            <li>Українська — рідна</li>
+            <li>Англійська — середній рівень</li>
+        </ul>
     </section>
 
-    <section>
-        <h2>Інтереси</h2>
+    <!-- Інтереси -->
+    <section aria-labelledby="interests">
+        <h2 id="interests">Інтереси</h2>
         <p>Програмування, UI-дизайн, подорожі, саморозвиток</p>
     </section>
 
- <!-- Портфоліо -->
-<section class="portfolio">
-    <h2>Портфоліо</h2>
+    <!-- Портфоліо -->
+    <section aria-labelledby="portfolio">
+        <h2 id="portfolio">Портфоліо</h2>
 
-    <div class="portfolio-links">
-        <a href="lr2htmltsuniak/index.html" class="portfolio-btn">Лабораторна робота №1</a>
-        <a href="lab2.html" class="portfolio-btn">Лабораторна робота №2</a>
-        <a href="lab3.html" class="portfolio-btn">Лабораторна робота №3</a>
-        <a href="lab4.html" class="portfolio-btn">Лабораторна робота №4</a>
-        <a href="lab5.html" class="portfolio-btn">Лабораторна робота №5</a>
-    </div>
-</section>
+        <nav class="portfolio-links">
+            <a href="lr2htmltsuniak/index.html" class="portfolio-btn">
+                Лабораторна робота №1
+            </a>
+
+            <a href="lab2.html" class="portfolio-btn">
+                Лабораторна робота №2
+            </a>
+
+            <a href="lab3.html" class="portfolio-btn">
+                Лабораторна робота №3
+            </a>
+
+            <a href="lab4.html" class="portfolio-btn">
+                Лабораторна робота №4
+            </a>
+
+            <a href="lab5.html" class="portfolio-btn">
+                Лабораторна робота №5
+            </a>
+        </nav>
+    </section>
 
 </main>
+
 <footer>
     <div class="footer-content">
-        <p>© 2026 Неоніла Цюняк. Всі права захищені.</p>
-        <div class="footer-links">
+        <p>© <time datetime="2026">2026</time> Неоніла Цюняк. Всі права захищені.</p>
+
+        <nav class="footer-links">
             <a href="#">GitHub</a>
             <a href="#">Telegram</a>
-            <a href="nila.tsiuniak-pi2302@kep.nung.edu.ua">Email</a>
-        </div>
+            <a href="mailto:nila.tsiuniak-pi2302@kep.nung.edu.ua">Email</a>
+        </nav>
     </div>
 </footer>
 
 </body>
 </html>
-
-
