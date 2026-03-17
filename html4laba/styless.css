@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+    padding-top: 20px; 
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: normal; 
+    text-transform: uppercase;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: black;
+}
