@@ -1,0 +1,194 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brown-light: #c8a882;
+  --brown-dark: #3b2314;
+  --brown-mid: #7b4f2e;
+  --cream: #f5ede0;
+  --card-border: #d4b896;
+  --text-dark: #2c1a0e;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: var(--cream);
+  color: var(--text-dark);
+}
+
+/* ── HEADER ── */
+header {
+  background: var(--brown-light);
+  padding: 1.6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--brown-dark);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+header h1 span {
+  font-style: italic;
+  color: var(--brown-mid);
+}
+
+.menu-icon {
+  display: none; /* видима лише на мобільних */
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-icon span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--brown-dark);
+  border-radius: 2px;
+}
+
+/* ── MAIN ── */
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.our-menu-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+  color: var(--text-dark);
+}
+
+section h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--brown-mid);
+  margin-bottom: 1.6rem;
+}
+
+/* ── КАРТКИ ── */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 1.4rem);
+  min-width: 0;
+  border: 1.5px solid var(--card-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(59, 35, 20, 0.13);
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 0.9rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.card-body h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.card-body p {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+.card-price {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--brown-mid);
+  white-space: nowrap;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--brown-dark);
+  color: #f0e0cc;
+  text-align: center;
+  padding: 2.2rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+footer strong {
+  font-size: 1rem;
+  display: block;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* ── АДАПТИВ: середні екрани (≤900px) ── */
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 1.4rem);
+    border: none;
+    box-shadow: 0 4px 18px rgba(59, 35, 20, 0.14);
+  }
+}
+
+/* ── АДАПТИВ: мобільні (≤580px) ── */
+@media (max-width: 580px) {
+  main {
+    width: 92%;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .card img {
+    border-radius: 8px;
+  }
+}
