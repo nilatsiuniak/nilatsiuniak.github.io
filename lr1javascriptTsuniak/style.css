@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #222;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 22px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 8px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+p {
+  margin: 4px 0;
+}
+
+.table-row {
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.even {
+  color: green;
+  font-weight: bold;
+}
+
+.odd {
+  color: red;
+  font-weight: bold;
+}
+
+.password-box {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  background-color: #eee;
+  font-family: monospace;
+  width: fit-content;
+}
+
+.grade-box {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  background-color: #e6f3ff;
+  width: fit-content;
+}
