@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №7</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Лабораторна робота №7</h1>
+    <p class="subtitle">Робота з Document Object Model. Обробка подій.</p>
+
+    <!-- Завдання 1 -->
+    <section>
+        <h2>Завдання 1. Фаренгейт ↔ Цельсій</h2>
+        <div class="row">
+            <label for="fahrenheit">Температура за Фаренгейтом</label>
+            <input type="text" id="fahrenheit" oninput="fahrenheitToCelsius()">
+        </div>
+        <div class="row">
+            <label for="celsius">Температура за Цельсієм</label>
+            <input type="text" id="celsius" oninput="celsiusToFahrenheit()">
+        </div>
+    </section>
+
+    <!-- Завдання 2 -->
+    <section>
+        <h2>Завдання 2. Таблиця множення (поле вводу)</h2>
+        <div id="score2"></div>
+        <button id="next2" onclick="generateTask2()">наступне завдання</button>
+        <div class="row">
+            <span id="task2"></span>
+            <input type="text" id="answer2" onkeydown="if (event.key === 'Enter') checkAnswer2()">
+            <button id="check2" onclick="checkAnswer2()">перевірити</button>
+        </div>
+        <div id="result2"></div>
+    </section>
+
+    <!-- Завдання 3 -->
+    <section>
+        <h2>Завдання 3. Таблиця множення (радіокнопки)</h2>
+        <div id="score3"></div>
+        <button id="next3" onclick="generateTask3()">наступне завдання</button>
+        <div id="task3"></div>
+        <div id="options3"></div>
+        <div id="result3"></div>
+    </section>
+
+    <!-- Завдання 4 -->
+    <section>
+        <h2>Завдання 4. Галерея «Клавіатури»</h2>
+        <div id="rotator"></div>
+    </section>
+
+    <!-- Завдання 5 -->
+    <section>
+        <h2>Завдання 5. Captcha</h2>
+        <div id="captcha"></div>
+    </section>
+</body>
+</html>

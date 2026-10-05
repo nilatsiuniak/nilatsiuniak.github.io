@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 0;
+    color: #666;
+}
+
+section {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.row {
+    margin: 6px 0;
+}
+
+/* ---------- Завдання 1 ---------- */
+#fahrenheit,
+#celsius {
+    width: 220px;
+    font-size: 16px;
+    padding: 3px 6px;
+}
+
+#fahrenheit + *,
+label {
+    display: inline-block;
+    width: 270px;
+}
+
+/* ---------- Завдання 2 і 3 ---------- */
+button {
+    font-size: 15px;
+    padding: 3px 10px;
+    cursor: pointer;
+    margin: 6px 0;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+#answer2 {
+    width: 200px;
+    font-size: 16px;
+    padding: 3px 6px;
+    margin: 0 6px;
+}
+
+#task3 {
+    margin-top: 6px;
+}
+
+#options3 label {
+    display: block;
+    width: auto;
+    cursor: pointer;
+    margin: 2px 0;
+}
+
+#options3 input {
+    margin-right: 8px;
+}
+
+.ok {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+#result2,
+#result3 {
+    min-height: 26px;
+    margin-top: 4px;
+}
+
+/* ---------- Завдання 4: ротатор ---------- */
+.rotator {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: auto auto auto;
+    border: 1px solid #ddd;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rotator__left,
+.rotator__right {
+    grid-row: 1 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+}
+
+.rotator__left {
+    grid-column: 1;
+    border-right: 1px solid #ddd;
+}
+
+.rotator__right {
+    grid-column: 3;
+    border-left: 1px solid #ddd;
+}
+
+.rotator__link {
+    color: #44a;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.rotator__link.hidden {
+    visibility: hidden; /* місце лишається, тому сторінка не «стрибає» */
+}
+
+.rotator__counter {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.rotator__imgbox {
+    grid-column: 2;
+    grid-row: 2;
+    height: 420px;           /* фіксована висота */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.rotator__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.rotator__caption {
+    grid-column: 2;
+    grid-row: 3;
+    height: 70px;            /* фіксована висота */
+    text-align: center;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.rotator__title {
+    font-weight: bold;
+    display: block;
+}
+
+/* ---------- Завдання 5: captcha ---------- */
+.captcha {
+    display: inline-block;
+}
+
+.captcha__label {
+    margin-bottom: 10px;
+}
+
+.captcha__display {
+    display: flex;
+    gap: 10px;
+    padding: 6px;
+    border: 2px solid #bbb;
+    border-bottom: none;
+    min-height: 56px;
+    background: #fff;
+}
+
+.captcha__digit {
+    display: grid;
+    grid-template-columns: repeat(3, 8px);
+    grid-auto-rows: 8px;
+}
+
+.captcha__pixel {
+    display: block;
+    width: 8px;
+    height: 8px;
+}
+
+.captcha__pixel.on {
+    background: red;
+}
+
+.captcha__input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 3px 6px;
+    border: 2px solid #bbb;
+}
+
+.captcha__message {
+    min-height: 26px;
+    margin-top: 4px;
+}
